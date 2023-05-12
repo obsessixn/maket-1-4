@@ -1,0 +1,216 @@
+/* TTLakes-Regular */
+@font-face {
+  font-family: 'tt_lakesbold';
+  src: url('/ttlakes-bold-webfont.woff2') format('woff2'),
+       url('ttlakes-bold-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: bold;
+
+}
+
+@font-face {
+  font-family: 'tt_lakesitalic';
+  src: url('ttlakes-italic-webfont.woff2') format('woff2'),
+       url('ttlakes-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'tt_lakesmedium';
+  src: url('ttlakes-medium-webfont.woff2') format('woff2'),
+       url('ttlakes-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'tt_lakesregular';
+  src: url('ttlakes-regular-webfont.woff2') format('woff2'),
+       url('ttlakes-regular-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+  
+  body,
+  html {
+    background-color: #ffffff;
+    font-family: 'tt_lakesbold';
+    font-weight: 500;
+    height: 100%;
+    width: 768px;
+  }
+  
+  /* H E A D E R */
+  
+  .menu__page {
+    width: 320px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+  
+  .menu__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-right: 24px;
+  }
+  
+  /* L O G O S */
+  
+  .logo {
+    display: flex;
+    width: 97px;
+    height: 51px;
+  }
+  
+  button {
+    border: 0;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .button__img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+    background-color: #ff3e79;
+    border-radius: 50%;
+  
+    padding: 11px;
+  }
+  
+  .menu__header-item:nth-child(2) {
+    flex-grow: 1;
+  }
+  
+  .btn:hover {
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px 0px rgba(255, 62, 121, 0.7),
+      1px 2px 4px 0px rgba(255, 62, 121, 0.7),
+      2px 4px 8px 0px rgba(255, 62, 121, 0.7),
+      2px 4px 16px 0px rgba(255, 62, 121, 0.7);
+  }
+  
+  .menu__header-item:nth-child(2) .btn:hover {
+    box-shadow: none;
+  }
+  
+  /* N A V I G A T I O N */
+  
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0px 268px 24px;
+    font-family: 'tt_lakesmedium';
+  
+    font-size: 16px;
+    gap: 32px;
+  }
+  
+  .menu__iteam {
+    font: #7e7e82;
+    font-family: 'tt_lakesmedium';
+  }
+  
+  .menu-link {
+    color: #1b1c21;
+  }
+  
+  .menu__text {
+    padding: 32px 32px;
+    font-family: 'tt_lakesregular';
+    background: #7e7e82;
+  }
+  
+  .menu-link:hover {
+    color: #7e7e82;
+  }
+  
+  .menu-link:hover :before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    border-left: 8px solid #41f6d7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 32px;
+  }
+  
+  .footer__logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+  }
+  
+  .menu__footer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .footer__mail {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family: 'tt_lakesmedium';
+  
+    gap: 16px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+  }
+  
+  .footer__phone {
+    font-size: 24px;
+    font-family: 'tt_lakesbold';
+  
+    gap: 16px;
+    padding-left: 24px;
+  }
+  
+  .footer__mail {
+    gap: 16px;
+    padding-left: 24px;
+  }
+  
+  .lang__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 40px 24px 24px 24px;
+  }
+  
+  .lang__radio input {
+    appearance: none;
+  }
+  
+  .lang__radio input:checked + .lang__button {
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.25);
+  }
+  
+  .lang__button {
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'tt_lakesmedium';
+  }
+  
+  .lang__button:hover {
+    color: #7e7e82;
+    transform: scale(1.25);
+  }
+  
